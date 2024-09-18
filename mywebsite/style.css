@@ -1,0 +1,60 @@
+/* Applies to the entire body of the HTML document (except where overridden by more specific
+selectors). */
+body {
+  margin: 25px;
+  background-color: rgb(240,240,240);
+  font-family: arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Applies to all <h1>...</h1> elements. */
+h1 {
+  font-size: 35px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+/* Applies to all elements with <... class="someclass"> specified. */
+.someclass { color: red; }
+
+/* Applies to the element with <... id="someid"> specified. */
+#someid { color: green; }
+
+.nav-link-large {
+  font-size: 16px; /* 设置合适的字体大小 */
+}
+
+
+/*card*/
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* 让卡片在容器宽度不足时自动换行 */
+}
+
+.card {
+  margin-right: 35px; /* 可以增加间距 */
+}
+
+/*card btn*/
+.btn-with-small-image img {
+  width: 32px; /* 调整图片宽度 */
+  height: auto; /* 让高度根据宽度自动调整，保持比例 */
+  margin-right: 5px;
+  display: block; /* 设置图片为块级元素 */
+  margin: 0 auto; /* 水平居中 */
+}
+
+/*table*/
+.custom-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid black;
+  
+}
+.custom-table th, .custom-table td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+

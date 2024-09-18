@@ -1,0 +1,28 @@
+.background{ background-size: cover;
+
+}
+
+.table-striped{ opacity: 0.7;
+                
+                
+
+}
+
+.border{ border: solid 1px color black;
+
+}
+
+.tableeee{ margin-left: 200px;
+           margin-right: 200px;
+           margin-top: 50px;
+           background-color: lightgray;
+           opacity: 0.7;
+           border-collapse: collapse;box-shadow: 10px 10px 20px powderblue;
+           text-align: center;
+
+
+}
+
+#example{ padding: 20px 20px 20px 20px;
+
+}

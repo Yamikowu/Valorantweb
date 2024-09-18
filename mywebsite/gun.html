@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MY VALORANT-GUN</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoW2Kga9LgA8l0UiaGmo5Wd-Za4ET4koQ2t3_H4SV94A&s" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a style="font-weight: bold;justify-content:center;" class="navbar-brand" href="index.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoW2Kga9LgA8l0UiaGmo5Wd-Za4ET4koQ2t3_H4SV94A&s"
+                    alt="logo" style="height: 25px;">
+                MY VALORANT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active nav-link-large" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-large" href="rank.html">Rank</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-link-large" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Game
+                        </a>
+
+                        <!--Dropdown-->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="character.html">Character</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="map.html">Map</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="gun.html">Gun</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-link-large" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Social media
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.facebook.com/VALORANTtw/">Facebook</a></li>
+                            <li><a class="dropdown-item" href="https://www.instagram.com/valoranttw/">Instagram</a></li>
+                            <li><a class="dropdown-item" href="https://www.youtube.com/PlayValorant">Youtube</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    PLAY!
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">SIGN IN</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <!--Form-->
+                            <div class="modal-body">
+                                <form class="px-4 py-3">
+                                    <div class="mb-3">
+                                        <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                                            placeholder="email@example.com">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                                            placeholder="Password">
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                            <label class="form-check-label" for="dropdownCheck">
+                                                Remember me
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!--Tooltips-->
+                                    <div id="liveAlertPlaceholder"></div>
+                                    <button type="button" class="btn btn-primary" id="liveAlertBtn"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="submit"
+                                        data-bs-title="It's not working right now~">
+                                        Submit
+                                    </button>
+                                </form>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">New around here? Sign up</a>
+                                <a class="dropdown-item" href="#">Forgot password?</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <!--Breadcrumb-->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Gun</li>
+        </ol>
+    </nav>
+    <H2 style="font-style: oblique;">Every Gun - Link</H2>
+    <BR>
+
+    <!--list group with link-->
+    <div class="list-group">
+        <a href="https://playvalorant.com/zh-tw/arsenal/sidearms/"
+            class="list-group-item list-group-item-action list-group-item-primary">隨身武器</a>
+        <a href="https://playvalorant.com/zh-tw/arsenal/smgs/"
+            class="list-group-item list-group-item-action list-group-item-secondary">衝鋒槍</a>
+        <a href="https://playvalorant.com/zh-tw/arsenal/shotguns/"
+            class="list-group-item list-group-item-action list-group-item-success">散彈槍</a>
+        <a href="https://playvalorant.com/zh-tw/arsenal/rifles/"
+            class="list-group-item list-group-item-action list-group-item-danger">步槍</a>
+        <a href="https://playvalorant.com/zh-tw/arsenal/snipers/"
+            class="list-group-item list-group-item-action list-group-item-warning">狙擊槍</a>
+        <a href="https://playvalorant.com/zh-tw/arsenal/heavies/"
+            class="list-group-item list-group-item-action list-group-item-info">重型武器</a>
+        <a href="https://playvalorant.com/zh-tw/arsenal/melee/"
+            class="list-group-item list-group-item-action list-group-item-light">近戰武器</a>
+        <a href="https://playvalorant.com/zh-tw/arsenal/"
+            class="list-group-item list-group-item-action list-group-item-dark">所有武器</a>
+    </div>
+    <br>
+    </BR>
+
+    <H2 style="font-style: oblique;">My Most Commonly Used Guns</H2>
+    <BR>
+
+    <!--table-->
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <table class="custom-table">
+                <tr>
+                    <td style="font-weight: bold;">隨身武器</td>
+                </tr>
+
+                <table class="custom-table">
+                    <tr>
+                        <td>
+                            <!--Collapse-->
+                            <p>
+                                <button class="btn btn-secondary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseWidthExample" aria-expanded="false"
+                                    aria-controls="collapseWidthExample">
+                                    <img style="width: 300px;height: 100px;object-fit: cover;"
+                                        src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt25bf56ede3e3c57c/5eb281c42278aa3e8d0ba7fa/classic.png"
+                                        alt="Placeholder Image"> <br>
+                                    制式手槍
+                                </button>
+                            </p>
+                            <div style="min-height: 100px;">
+                                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                                    <div class="card card-body"
+                                        style="width: 300px;background-color: rgba(128, 128, 128, 0.463);">
+                                        在站立不動時進行主要攻擊，能精準地射擊目標，也能以連發模式為輔助，應付貼身近戰。
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <p>
+                                <button class="btn btn-secondary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseWidthExample1" aria-expanded="false"
+                                    aria-controls="collapseWidthExample1">
+                                    <img style="width: 300px;height: 100px;object-fit: cover;"
+                                        src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc4788d390015fb7c/5eb281c4105ab84c3815e164/ghost.png"
+                                        alt="Placeholder Image"> <br>
+                                    鬼魅
+                                </button>
+                            </p>
+                            <div style="min-height: 100px;">
+                                <div class="collapse collapse-horizontal" id="collapseWidthExample1">
+                                    <div class="card card-body"
+                                        style="width: 450px;background-color: rgba(128, 128, 128, 0.463);">
+                                        鬼魅除了提供準度，更具備大型彈匣來彌補你可能一時失手的窘境。需要控制其射速才能對付距離較遠的目標。要是距離近到能看到敵方的眼白，趕快點發就對了。
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <p>
+                                <button class="btn btn-secondary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseWidthExample2" aria-expanded="false"
+                                    aria-controls="collapseWidthExample2">
+                                    <img style="width: 300px;height: 100px;object-fit: cover;"
+                                        src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt3bbed29a5475c7d4/5eb281ca2278aa3e8d0ba7fe/sheriff.png"
+                                        alt="Placeholder Image"> <br>
+                                    神射 (Eco局好槍)
+                                </button>
+                            </p>
+                            <div style="min-height: 100px;">
+                                <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+                                    <div class="card card-body"
+                                        style="width: 350px;background-color: rgba(128, 128, 128, 0.463);">
+                                        發射極具威力的子彈會產生強大的後座力，真要有兩把刷子才能完全掌握它。以正確的方式駕馭「神射」，你的敵人就會深刻體會成為炮灰的感受。
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+
+
+                <table class="custom-table">
+                    <tr>
+                        <td style="font-weight: bold;">步槍</td>
+                    </tr>
+
+                    <table class="custom-table">
+                        <tr>
+                            <td>
+                                <!--Collapse-->
+                                <p>
+                                    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseWidthExample3" aria-expanded="false"
+                                        aria-controls="collapseWidthExample3">
+                                        <img style="width: 350px;height: 100px;object-fit: cover;"
+                                            src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltd78ee0533f30e0a8/5eb281c4402b8b4d13a566dc/guardian.png"
+                                            alt="Placeholder Image"> <br>
+                                        捍衛者
+                                    </button>
+                                </p>
+                                <div style="min-height: 100px;">
+                                    <div class="collapse collapse-horizontal" id="collapseWidthExample3">
+                                        <div class="card card-body"
+                                            style="width: 450px;background-color: rgba(128, 128, 128, 0.463);">
+                                            能在耐心的射手中發光發熱，為了神射手設計的步槍。雖然相較於其他步槍較重且機動性較低，但卻相當精準且威力強大。當敵人出現於中距離和遠距離時，就是「獵人頭」的好時機。
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p>
+                                    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseWidthExample4" aria-expanded="false"
+                                        aria-controls="collapseWidthExample4">
+                                        <img style="width: 350px;height: 100px;object-fit: cover;"
+                                            src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt323df4a0d8210605/5eb281cb3b09c042ddca13a5/vandal.png"
+                                            alt="Placeholder Image"> <br>
+                                        暴徒
+                                    </button>
+                                </p>
+                                <div style="min-height: 100px;">
+                                    <div class="collapse collapse-horizontal" id="collapseWidthExample4">
+                                        <div class="card card-body"
+                                            style="width: 400px;background-color: rgba(128, 128, 128, 0.463);">
+                                            隨著攻擊時間拉長，其穩定度也隨之下降。不過「暴徒」仍能克服距離，提供高傷害值。對專注追求一槍爆頭的玩家來說是一大福音。
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+        </div>
+    </div>
+    <br></br>
+    <H2 style="font-style: oblique; ">My Skins</H2>
+    <BR>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <table class="custom-table">
+                <tr>
+                    <!--Collapse-->
+                    <td>
+                        <p>
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseWidthExample7" aria-expanded="false"
+                                aria-controls="collapseWidthExample7">
+                                <img style="width: 350px;height: 100px;object-fit: cover;"
+                                    src="https://vgraphs.com/images/weapons/skins/full-details/valorant-ion-sheriff-weapon-skin.png"
+                                    alt="Placeholder Image"> <br>
+                                離子聖芒神射
+                            </button>
+                        </p>
+                        <div style="min-height: 100px;">
+                            <div class="collapse collapse-horizontal" id="collapseWidthExample7">
+                                <div class="card card-body"
+                                    style="width: 350px;background-color: rgba(128, 128, 128, 0.463);">
+                                    為大家最愛的神射造型之一，之前在夜市刷到就毫無猶豫地買了。開槍的時候讓人感覺很穩定，爆頭神器。
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <p>
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseWidthExample5" aria-expanded="false"
+                                aria-controls="collapseWidthExample5">
+                                <img style="width: 350px;height: 100px;object-fit: cover;"
+                                    src="https://valorantinfo.com/images/tw/prime-vandal_valorant_full_skin_154325.webp"
+                                    alt="Placeholder Image"> <br>
+                                紫金狂潮 $1775
+                            </button>
+                        </p>
+                        <div style="min-height: 100px;">
+                            <div class="collapse collapse-horizontal" id="collapseWidthExample5">
+                                <div class="card card-body"
+                                    style="width: 300px;background-color: rgba(128, 128, 128, 0.463);">
+                                    為首個特戰英豪推出的暴徒造型，也是我第一個入手的造型，個人認為點頭和壓槍的手感都非常好。
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <p>
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseWidthExample6" aria-expanded="false"
+                                aria-controls="collapseWidthExample6">
+                                <img style="width: 350px;height: 100px;object-fit: cover;"
+                                    src="https://valorantinfo.com/images/tw/champions-2023-vandal_valorant_full_skin_894038.webp"
+                                    alt="Placeholder Image"> <br>
+                                2023冠軍暴徒 $2675
+                            </button>
+                        </p>
+                        <div style="min-height: 100px;">
+                            <div class="collapse collapse-horizontal" id="collapseWidthExample6">
+                                <div class="card card-body"
+                                    style="width: 350px;background-color: rgba(128, 128, 128, 0.463);">
+                                    2023推出的冠軍暴徒，音效屬於低沉的咚咚聲，點頭不錯但壓槍感覺容易飄。檢視武器時會有冠軍配樂。
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+
+                </tr>
+            </table>
+            <br></br>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <table class="custom-table">
+                <tr>
+                    <!--Collapse-->
+                    <td>
+                        <div style="position: relative; ">
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseWidthExample8" aria-expanded="false"
+                                aria-controls="collapseWidthExample8">
+                                <img style="width: 300px;height: 3 00px;object-fit: cover;"
+                                    src="https://valorantinfo.com/images/tw/equilibrium-level-2variant-1-dark_valorant_full_skin_464568.webp"
+                                    alt="Placeholder Image"> <br>
+                                錦鯉太極扇 $1825
+                            </button>
+                        
+                        <div style="position: absolute; top: 100%; left: 50%; transform: translateX(-50%); min-width: 300px; min-height: 100px;">
+                            <div class="collapse collapse-horizontal" id="collapseWidthExample8">
+                                <div class="card card-body"
+                                    style="width: 750px;background-color: rgba(128, 128, 128, 0.463);">
+                                    最近在夜市刷到的，是我唯一的刀造型。除了拿出來畫面會抖一下，簡潔又不失質感的外觀讓我隨時隨地都想揮。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </td>
+                </tr>
+            </table>
+            <br></br>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="default.js"></script>
+</body>
+
+</html>
