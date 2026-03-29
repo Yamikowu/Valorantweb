@@ -14,11 +14,19 @@ h1 {
   margin-top: 5px;
 }
 
-/* Applies to all elements with <... class="someclass"> specified. */
-.someclass { color: red; }
+/* Custom class for paragraph */
+.welcome-text { 
+  color: #0f1923; /* Valorant dark color */
+  font-weight: bold;
+  margin: 0;
+}
 
-/* Applies to the element with <... id="someid"> specified. */
-#someid { color: green; }
+/* Custom ID for alert box */
+#welcome-alert { 
+  border: 2px solid #ff4655; /* Valorant red */
+  background-color: #ece8e1; /* Valorant off-white */
+  padding: 15px;
+}
 
 .nav-link-large {
   font-size: 16px; /* 设置合适的字体大小 */
